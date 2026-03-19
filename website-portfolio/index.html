@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Веб-дизайнер Юдина Ярослава</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     NAV
+══════════════════════════════ -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" ><img src="img/logo.svg" alt="Юдина Ярослава" ></a>
+      <ul class="nav-links">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#contact">Контакты</a></li>
+        <li><a href="#contact" class="btn-outline">Связаться</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="grid" style="align-items:center;">
+
+      <!-- Текст + звезда слева -->
+      <div class="hero-text">
+        <div class="hstar hs-left">
+          <img src="img/star1.svg" alt="star" >
+        </div>
+
+        <h1>Веб-дизайнер и разработчик цифровых интерфейсов</h1>
+        <p class="hero-sub">Создаю современные и функциональные сайты,<br> в которых сочетаются эстетика и техническая точность.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-outline">Связаться</a>
+          <a href="#projects" class="btn-solid">Посмотреть проекты</a>
+        </div>
+      </div>
+
+      <!-- 3 звезды справа: голубая большая, красная меньше, красная самая маленькая -->
+      <div class="hero-right">
+        <!-- Голубая — самая большая, левее -->
+        <div class="hstar hs-r1">
+          <img src="img/star2.svg" alt="star" >
+        </div>
+        <!-- Красная меньше -->
+        <div class="hstar hs-r2">
+          <img src="img/star4.svg" alt="star" >
+        </div>
+        <!-- Маленькая красная -->
+        <div class="hstar hs-r3">
+          <img src="img/star3.svg" alt="star" >
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     БЕГУЩАЯ СТРОКА
+══════════════════════════════ -->
+<!-- Сокращённый SVG-символ для повторного использования через <use> -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="star-orange" viewBox="0 0 25 35">
+    <path d="M24.1006 16.1195C24.5041 16.5023 24.5961 17.1017 24.3417 17.6049C24.1088 18.0703 23.9078 18.4727 23.6688 18.8537C21.1964 22.8632 19.8338 24.9619 17.3993 28.9929C16.7821 30.0073 15.3327 33.082 14.7673 34.1412C14.7561 34.1541 14.757 34.1662 14.7458 34.1791C14.2301 35.0892 12.803 35.1322 12.2757 34.213C12.2628 34.2018 11.4799 32.7678 10.0899 29.8144C8.06379 25.78 5.4028 22.3493 1.24048 20.2759C-0.268472 19.5249 -0.3381 18.8997 0.693023 17.5764C1.08175 17.0876 1.46959 16.5868 1.89799 16.1436C6.03659 11.8798 8.73334 6.78747 10.6182 1.19652C10.7384 0.848431 11.0085 0.562176 11.3027 0.274171C11.6881 -0.0931757 12.2824 -0.087836 12.6721 0.271721C12.9963 0.563314 13.2981 0.880771 13.494 1.24228C13.9308 2.08323 14.0981 3.05282 14.3946 3.96455C15.9911 8.92704 19.0203 12.7553 23.4049 15.5519C23.6462 15.7041 23.8669 15.9062 24.1006 16.1195ZM12.1417 4.81896C10.8802 7.31035 9.8531 9.85745 8.36919 12.1226C6.85173 14.4265 4.88865 16.4355 3.1178 18.5882C8.20053 21.1523 11.357 25.5652 13.4684 31.1084C15.5895 25.767 18.7402 21.4174 22.2476 17.3085C15.9366 13.1852 14.3643 11.2268 12.1417 4.81896Z" fill="#FD853A"/>
+  </symbol>
+</svg>
+
+<div class="ticker-section" aria-hidden="true">
+  <div class="ticker-inner">
+    <div class="ticker-track">
+      <!-- 10 элементов × 2 копии = бесшовный цикл -->
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>CSS</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>JavaScript</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>Дизайн сайтов</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>UX</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>Figma</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>Frontentd</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>Веб-дизайн</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>HTML</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>Дизайн приложений</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>UI</span>
+      <!-- Дубль -->
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>CSS</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>JavaScript</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>Дизайн сайтов</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>UX</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>Figma</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>Frontentd</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>Веб-дизайн</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>HTML</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>Дизайн приложений</span>
+      <span class="t-item"><span class="t-star"><svg><use href="#star-orange"/></svg></span>UI</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     ОБО МНЕ
+══════════════════════════════ -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="grid" style="align-items:start; padding-top:0;">
+
+      <div class="about-text reveal">
+        <h2>Обо мне</h2>
+        <p>Меня зовут Юдина Ярослава. Я веб-дизайнер и frontend-разработчик.</p>
+        <p>Я занимаюсь созданием и разработкой веб-сайтов. В работе я сочетаю визуальную эстетику и удобство использования.</p>
+        <p>Для меня важно продумывать каждый элемент интерфейса: как он выглядит, как работает и насколько удобно с ним взаимодействовать. Поэтому я уделяю внимание как дизайну, так и технической реализации, чтобы итоговый результат был целостным и качественным.</p>
+      </div>
+
+      <div class="about-photo-col reveal d2">
+        <div class="photo-wrap">
+            <img src="img/about_me.jpg" alt="Юдина Ярослава" class="photo-frame" style="object-fit:cover;object-position:top center;">
+          <div class="about-decor">
+            <svg viewBox="0 0 145 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M133.627 109.544C129.006 108.511 125.072 107.734 121.199 106.737C114.623 105.075 108.204 103.14 102.729 98.802C97.1796 94.3957 94.8888 88.6807 96.5197 81.9385C97.5276 77.8003 99.6557 73.9462 101.42 70.037C102.118 68.5122 103.258 67.1591 104.626 65.0492C101.013 65.9897 98.1863 66.7728 95.3302 67.4369C88.3578 69.0893 81.4471 71.0275 74.4042 72.202C64.7612 73.8601 58.7199 69.2364 57.3934 59.4816C56.8761 55.656 57.2894 51.6662 57.3208 47.7426C57.3373 46.5627 57.523 45.399 57.6494 43.9974C52.0572 47.8706 46.7966 51.6319 41.4286 55.1577C28.8949 63.3768 20.6395 55.1761 18.8079 44.9157C18.3175 42.1716 18.4926 39.2518 18.6241 36.4303C18.7759 34.5463 19.9038 32.9531 21.9822 33.1438C23.8662 33.2955 24.4737 34.9512 24.6055 36.7256C24.7603 38.4749 24.7961 40.2538 25.1406 41.946C25.5467 43.924 25.978 45.9249 26.7638 47.7887C28.984 53.0258 32.372 54.4541 37.4994 51.9503C41.122 50.1912 44.5025 47.8902 47.8624 45.6623C50.989 43.5898 54.0356 41.3526 57.0822 39.1154C58.665 37.982 60.298 36.8943 62.2663 37.8121C64.5295 38.8603 64.4645 41.053 64.4156 43.0766C64.3688 45.6535 63.9355 48.2005 64.0327 50.7706C64.1136 54.0152 64.2677 57.2804 64.8493 60.4292C65.6523 64.6984 67.6043 66.2907 71.9488 66.0617C76.1012 65.8417 80.3384 65.3771 84.411 64.4871C93.1258 62.5359 101.731 60.3012 110.359 58.0413C112.403 57.5117 114.157 57.453 115.467 59.1959C116.723 60.845 116.08 62.5116 115.023 64.0774C113.133 66.8616 111.097 69.6045 109.356 72.4779C107.839 75.0038 106.326 77.6258 105.301 80.3692C102.542 87.694 104.305 92.4233 110.879 96.6128C115.817 99.7726 121.21 101.876 126.859 103.294C130.927 104.329 135.053 105.097 139.137 105.963C141.3 106.415 143.536 106.887 143.973 109.537C144.357 112.045 142.595 113.476 140.804 114.788C140.036 115.329 139.19 115.754 138.369 116.202C136.701 117.075 135.064 118.066 133.317 118.774C120.359 124.126 116.428 134.658 116.869 147.559C116.957 149.937 117.79 152.304 118.359 154.659C118.63 155.826 119.261 156.951 119.388 158.124C119.5 158.961 119.296 160.246 118.736 160.609C118.129 161.023 116.867 160.793 116.111 160.564C114.474 160.04 113.052 158.471 112.358 157.012C110.994 154.116 109.765 151.022 109.305 147.892C108.256 140.963 109.354 134.15 111.664 127.52C113.635 121.869 117.636 117.926 122.697 115.04C126.027 113.199 129.467 111.641 133.627 109.544Z" fill="#F7EDE8"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="skills-wrap">
+      <div class="grid" style="align-items:start;">
+
+        <div class="hard-col reveal d1">
+          <!-- Фирменный декоративный элемент у hard-skills (зеркально слева) -->
+          <div class="card-decor-left">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M58.271 59.1451C58.521 58.1451 58.6668 57.3326 58.9377 56.5409C61.646 48.5409 66.0002 41.4159 70.9585 34.6451C71.5418 33.8534 72.271 33.1034 73.0835 32.6034C73.521 32.3326 74.396 32.3742 74.896 32.6451C75.271 32.8534 75.5418 33.6659 75.4585 34.1242C75.3127 34.9992 75.0002 35.8951 74.5627 36.6867C71.6877 41.9159 68.7918 47.1242 65.8543 52.3118C64.7502 54.2493 63.5835 56.1659 62.4377 58.0826C62.0627 58.7284 61.646 59.3534 61.2085 59.9368C60.7293 60.6034 60.0002 60.9993 59.271 60.5618C58.7918 60.2701 58.271 60.0617 58.271 59.1451Z" fill="#F7EDE8"/>
+              <path d="M87.7711 90.1672C86.7711 90.0005 85.6044 89.8755 84.4794 89.6255C80.0419 88.6255 75.6044 87.6255 71.1878 86.5838C70.2294 86.3547 69.2919 85.9588 68.4378 85.5005C67.2919 84.8963 66.8961 84.0422 67.0836 83.1047C67.2711 82.1672 68.0211 81.5838 69.3336 81.563C70.2294 81.5422 71.1878 81.563 72.0419 81.7713C77.6461 83.188 83.2503 84.6463 88.8336 86.1255C89.4586 86.2922 90.1044 86.5838 90.5836 87.0005C91.7919 88.0213 91.4169 89.6255 89.8752 90.0213C89.2711 90.1672 88.5836 90.1047 87.7711 90.1672Z" fill="#F7EDE8"/>
+              <path d="M29.2292 34.3124C29.3125 33.3332 29.5209 32.354 29.7709 31.3957C30 30.5415 30.5834 29.9374 31.5209 29.854C32.3125 29.7915 33.1667 30.5832 33.2917 31.6249C33.4584 33.0207 33.6042 34.4374 33.5417 35.8332C33.3542 40.0415 33.0834 44.2707 32.7917 48.479C32.6875 49.8749 32.5 51.2707 32.2709 52.6665C32.1875 53.1457 32.0209 53.6457 31.75 54.0207C31.0209 55.0832 29.6875 54.9999 29.1667 53.854C28.875 53.2082 28.75 52.4165 28.75 51.7082C28.6459 49.3749 28.9584 37.7707 29.2292 34.3124Z" fill="#F7EDE8"/>
+            </svg>
+          </div>
+          <div class="skill-card">
+            <h3>Hard Skills</h3>
+            <ul class="skill-list">
+              <li>Проектирование интерфейсов</li>
+              <li>Уверенное владение Figma</li>
+              <li>Адаптивная верстка</li>
+              <li>Frontend-разработка</li>
+              <li>Базовая работа с JavaScript</li>
+              <li>Оптимизация и публикация сайтов</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="soft-col reveal d2">
+          <!-- Фирменный декоративный элемент у карточки -->
+          <div class="card-decor">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M58.271 59.1451C58.521 58.1451 58.6668 57.3326 58.9377 56.5409C61.646 48.5409 66.0002 41.4159 70.9585 34.6451C71.5418 33.8534 72.271 33.1034 73.0835 32.6034C73.521 32.3326 74.396 32.3742 74.896 32.6451C75.271 32.8534 75.5418 33.6659 75.4585 34.1242C75.3127 34.9992 75.0002 35.8951 74.5627 36.6867C71.6877 41.9159 68.7918 47.1242 65.8543 52.3118C64.7502 54.2493 63.5835 56.1659 62.4377 58.0826C62.0627 58.7284 61.646 59.3534 61.2085 59.9368C60.7293 60.6034 60.0002 60.9993 59.271 60.5618C58.7918 60.2701 58.271 60.0617 58.271 59.1451Z" fill="#F7EDE8"/>
+              <path d="M87.7711 90.1672C86.7711 90.0005 85.6044 89.8755 84.4794 89.6255C80.0419 88.6255 75.6044 87.6255 71.1878 86.5838C70.2294 86.3547 69.2919 85.9588 68.4378 85.5005C67.2919 84.8963 66.8961 84.0422 67.0836 83.1047C67.2711 82.1672 68.0211 81.5838 69.3336 81.563C70.2294 81.5422 71.1878 81.563 72.0419 81.7713C77.6461 83.188 83.2503 84.6463 88.8336 86.1255C89.4586 86.2922 90.1044 86.5838 90.5836 87.0005C91.7919 88.0213 91.4169 89.6255 89.8752 90.0213C89.2711 90.1672 88.5836 90.1047 87.7711 90.1672Z" fill="#F7EDE8"/>
+              <path d="M29.2292 34.3124C29.3125 33.3332 29.5209 32.354 29.7709 31.3957C30 30.5415 30.5834 29.9374 31.5209 29.854C32.3125 29.7915 33.1667 30.5832 33.2917 31.6249C33.4584 33.0207 33.6042 34.4374 33.5417 35.8332C33.3542 40.0415 33.0834 44.2707 32.7917 48.479C32.6875 49.8749 32.5 51.2707 32.2709 52.6665C32.1875 53.1457 32.0209 53.6457 31.75 54.0207C31.0209 55.0832 29.6875 54.9999 29.1667 53.854C28.875 53.2082 28.75 52.4165 28.75 51.7082C28.6459 49.3749 28.9584 37.7707 29.2292 34.3124Z" fill="#F7EDE8"/>
+            </svg>
+          </div>
+          <div class="skill-card">
+            <h3>Soft Skills</h3>
+            <ul class="skill-list">
+              <li>Внимание к деталям</li>
+              <li>Системное мышление</li>
+              <li>Самоорганизация</li>
+              <li>Стремление к развитию</li>
+              <li>Ответственность</li>
+              <li>Коммуникабельность</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     ПРОЕКТЫ
+══════════════════════════════ -->
+<section class="projects-section" id="projects">
+  <div class="container">
+
+    <div class="projects-head reveal">
+      <h2 class="ph-title">Проекты</h2>
+      <p class="ph-desc">Ниже представлены проекты в области веб-дизайна и разработки. Каждый проект отражает индивидуальный подход к задаче и продуманную систему визуальных решений.</p>
+      <div class="ph-star">
+        <img src="img/star4.svg" alt="star" >
+      </div>
+    </div>
+
+    <!-- Слайдер: карточки 4 колонки, выходят за края экрана -->
+    
+    <div class="slider-viewport reveal">
+      <div class="slider-track" id="sliderTrack">
+        <a href="project-todo.html">
+        <div class="project-card">
+          <div class="project-bg pb-1">
+          </div>
+          <div class="card-title"><span>To-Do List</span></div>
+          <div class="card-link">↗</div>
+        </div>
+      </a>
+
+        <!-- Карточка 2 -->
+        <a href="project-julwerry.html">
+        <div class="project-card">
+          <div class="project-bg pb-2">
+          </div>
+          <div class="card-title"><span>Интернет магазин Julwerry</span></div>
+          <div class="card-link">↗</div>
+        </div>
+        </a>
+        <!-- Карточка 3 -->
+        <a href="project-subarif.html">
+        <div class="project-card">
+          <div class="project-bg pb-3">
+          </div>
+          <div class="card-title"><span>Веб-приложение Subarif</span></div>
+          <div class="card-link">↗</div>
+        </div>
+        </a>
+
+        <!-- Карточка 4 -->
+        <a href="project-restar.html">
+        <div class="project-card">
+          <div class="project-bg pb-4">
+          </div>
+          <div class="card-title"><span>Сайт для ресторана</span></div>
+          <div class="card-link">↗</div>
+        </div>
+        </a>
+
+        <!-- Карточка 5 -->
+        <a href="project-promo.html">
+        <div class="project-card">
+          <div class="project-bg pb-5">
+          </div>
+          <div class="card-title"><span>Промо-сайт Subarif</span></div>
+          <div class="card-link">↗</div>
+        </div>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="slider-controls reveal">
+      <button class="s-btn" id="prevBtn" aria-label="Назад">←</button>
+      <button class="s-btn" id="nextBtn" aria-label="Вперёд">→</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     КОНТАКТЫ
+══════════════════════════════ -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="grid">
+      <div class="contact-inner reveal">
+
+        <h2>
+          Связаться со мной
+          <span class="c-star">
+            <svg viewBox="0 0 25 35" xmlns="http://www.w3.org/2000/svg"><use href="#star-orange"/></svg>
+          </span>
+        </h2>
+
+        <p class="contact-desc">
+          Если у вас есть идея проекта или предложение о сотрудничестве, заполните форму ниже.
+          Я свяжусь с вами в ближайшее время.
+        </p>
+
+        <!-- Тонкая разделительная линия -->
+        <hr class="contact-divider">
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="f-group">
+              <label for="fn">Имя</label>
+              <input id="fn" type="text" class="f-control" placeholder="Имя">
+            </div>
+            <div class="f-group">
+              <label for="fe">Email</label>
+              <input id="fe" type="email" class="f-control" placeholder="Email">
+            </div>
+          </div>
+          <div class="f-group f-msg">
+            <label for="fm">Сообщение</label>
+            <textarea id="fm" class="f-control" placeholder="Сообщение по желанию"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     ФУТЕР
+══════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="grid">
+      <div class="f-brand">
+        <div class="f-name">Юдина Ярослава</div>
+        <div class="f-role">веб-дизайнер &amp; frontend разработчик</div>
+      </div>
+      <div class="f-contacts">
+        <p>Email: </a>yaroslava@gmail.com</p>
+        <p>Telegram: @yarslava456</p>
+        <p>GitHub: @yaroslava-art88</p>
+      </div>
+      <div class="f-nav">
+        <a href="#about">Обо мне</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </div>
+      <div class="f-cta">
+        <a href="#contact" class="f-btn">Связаться</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 Все права защищены</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">✓ Сообщение отправлено!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
