@@ -102,7 +102,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
 /* ─── HERO ─── */
 .hero {
   padding-top: 200px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   min-height: 900px;
   position: relative;
   display: flex; flex-direction: column; justify-content: flex-start;
