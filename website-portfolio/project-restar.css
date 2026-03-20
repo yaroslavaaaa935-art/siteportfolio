@@ -68,7 +68,7 @@
   margin-bottom: 14px;
 }
 .p-dark .p-year {
-  font-family: var(--font-h); font-size: 14px; font-weight: 700;  /* оставлено без изменений */
+  font-family: var(--font-h); font-size: 20px; font-weight: 700;  /* оставлено без изменений */
   color: rgba(255,255,255,.45); margin-top: 28px;
 }
 
