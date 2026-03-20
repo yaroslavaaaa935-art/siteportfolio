@@ -56,7 +56,7 @@
 
 /* ─── ОБЩИЕ СТИЛИ ТЁМНЫХ СЕКЦИЙ ─── */
 .p-dark {
-  background: var(--navy);
+  background:  #0F2D2B;;
   padding: 90px 0;
 }
 .p-dark h2 {
