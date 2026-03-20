@@ -19,7 +19,7 @@ html { scroll-behavior: smooth; }
 body { background: var(--bg); color: var(--text); font-family: var(--font-b); overflow-x: hidden; }
 
 /* ─── GRID ─── */
-.container { max-width: 1440px; margin: 0 0; padding: 0 var(--margin); }
+.container { max-width: 1440px; margin: 0 auto; padding: 0 var(--margin); }
 .grid { display: grid; grid-template-columns: repeat(12,1fr); gap: var(--gutter); }
 
 /* ─── NAV ─── */
