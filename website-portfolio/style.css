@@ -102,8 +102,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
 /* ─── HERO ─── */
 .hero {
   padding-top: 200px;
-  padding-bottom: 0px;
-  min-height: 600px;   /* было 650px */
+  padding-bottom: 100px;
+  min-height: 800px;
   position: relative;
   display: flex; flex-direction: column; justify-content: flex-start;
 }
@@ -243,7 +243,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
 }
 .skill-card:hover { transform: translateY(-5px); box-shadow: 0 20px 48px rgba(0,0,0,.2); }
 .skill-card h3 {
-  font-family: var(--font-h); font-size:20px; font-weight:700;
+  font-family: var(--font-h); font-size:24px; font-weight:700;
   color:var(--red); text-align:center; margin-bottom:24px;
 }
 .skill-list { list-style: none; }
@@ -286,7 +286,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
 }
 .ph-desc {
   grid-column: 4 / 11;
-  font-size: 18px; line-height: 1.75; color: var(--muted); padding-top: 8px;
+  font-size: 20px; line-height: 1.75; color: var(--muted); padding-top: 8px;
 }
 .ph-star {
   grid-column: 12 / 13; justify-self: end; align-self: start;
@@ -340,7 +340,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
 
 .card-title { position:absolute; top:18px; left:14px; right:48px; }
 .card-title span {
-  font-family:var(--font-h); font-size:20px; font-weight:700;
+  font-family:var(--font-h); font-size:26px; font-weight:700;
   color:var(--white); line-height:1.3;
 }
 .card-link {
