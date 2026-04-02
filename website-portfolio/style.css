@@ -70,13 +70,10 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.08); }
 
 /* Кнопка в шапке — только обводка */
 .nav-btn {
-  font-family: var(--font-h); font-size: 18px; font-weight: 600;
-  color: var(--red); background: transparent;
-  border: 1.5px solid var(--red); border-radius: 8px;
-  padding: 9px 24px; text-decoration: none; cursor: pointer;
-  transition: background .2s, color .2s, transform .15s;
+  font-family: var(--font-h); font-size: 14px; font-weight: 600;
+
 }
-.nav-btn:hover { background: var(--red); color: var(--white); transform: translateY(-2px); }
+.nav-btn:hover { color: var(--white); transform: translateY(-2px); }
 
 /* ─── BUTTONS ─── */
 .btn-solid {
